@@ -7,4 +7,4 @@ This project stems from curiosity about what leads to dry eye disease. Here I em
 
 *Click the button below to view the code and execute the analysis in Google Colab* 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vin-Okumu/My-Repo/blob/Main/dry-eye-disease-modeling.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vin-Okumu/Dry-Eye-Disease-Modeling/blob/Main/dry-eye-disease-modeling.ipynb)
