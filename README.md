@@ -4,6 +4,6 @@ This project stems from curiosity about what leads to dry eye disease. Here I em
 
 **The dataset used in this analysis is hosted on [**Kaggle**](https://www.kaggle.com/code/vincentokumu/dry-eye-disease-modeling?select=Dry_Eye_Dataset.csv)**
 
-**The Code is accessible on Colab** 
+*Click the button below to view the code and execute the analysis in Google Colab* 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vin-Okumu/My-Repo/blob/Dry-Eye-Disease/dry-eye-disease-modeling.ipynb)
