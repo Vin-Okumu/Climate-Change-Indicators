@@ -1,4 +1,4 @@
-# 📊 Dry Eye Disease Modeling
+# Dry Eye Disease Modeling
 
 ## 📝Introduction
 
