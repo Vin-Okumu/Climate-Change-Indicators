@@ -8,7 +8,7 @@ Dry Eye Disease (DED) is a common ocular condition that affects millions of indi
 
 ### 📂Data Description
 
-The dataset used for this analysis contains information of about 20000 subjects of teenagers, middle-aged adults and post-adulthood beings of both genders - male and female. Of the 26 columns included in the datasets the dataset captured measurement on daily steps, sleep time, pulse measurement, blood pressure, eating and drinking habits, stress levels, medical issues such as anxiety, hypertension, asthma etc. and any medication used. Additionally, the data also consists of basic ocular attributes used to predict presence of dry eye disease. 
+The dataset used for this analysis contains information of about 20000 subjects of teenagers, middle-aged adults and post-adulthood beings of both genders - male and female. Of the 26 columns included in the datasets were measurement on daily steps, sleep time, pulse measurement, blood pressure, eating and drinking habits, stress levels, medical issues such as anxiety, hypertension, asthma etc. and any medication used. Additionally, the data also consists of basic ocular attributes used to predict presence of dry eye disease. 
 
 ### 🛠️Data Preprocessing
 
