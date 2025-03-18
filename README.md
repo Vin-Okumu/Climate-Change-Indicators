@@ -112,8 +112,6 @@ This analysis, implementing a Random Forest model to predict Dry Eye Disease (DE
 
 🩺 Incorporate additional clinical features for better predictive power.
 
-*The dataset used in this analysis is hosted on [**Kaggle**](https://www.kaggle.com/code/vincentokumu/dry-eye-disease-modeling?select=Dry_Eye_Dataset.csv)*
+👉[*Link to Dataset*](https://www.kaggle.com/code/vincentokumu/dry-eye-disease-modeling?select=Dry_Eye_Dataset.csv)
 
-*Click the button below to view the code and execute the analysis in Google Colab* 
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vin-Okumu/Dry-Eye-Disease-Modeling/blob/Main/dry-eye-disease-modeling.ipynb)
+[![Open adn Execute Analysis In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vin-Okumu/Dry-Eye-Disease-Modeling/blob/Main/dry-eye-disease-modeling.ipynb)
