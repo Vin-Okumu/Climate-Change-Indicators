@@ -69,7 +69,7 @@ The predictions were saved to a CSV file for further analysis.
 
 The Random Forest model achieved the following performance on the test data:
 
-Accuracy: 66%
+**Accuracy:** 66%
 
 **Precision:** 67% for DED cases, 28% for non-DED cases
 
@@ -79,6 +79,32 @@ Accuracy: 66%
 
 The model exhibited high sensitivity (recall) for detecting DED cases but struggled to correctly classify non-DED cases due to class imbalance.
 
+#### Prediction on New Data
+
+The model was applied to new patient data, generating individual predictions and probabilities for each patient. The predicted probability values provided insight into the confidence level of the model's classification.
+
+## Discussion
+
+The Random Forest model demonstrated strong predictive capability for DED, particularly in identifying positive cases (high recall). However, the low recall for non-DED cases indicated a class imbalance issue. This could be addressed through:
+
+**SMOTE** (Synthetic Minority Over-Sampling Technique) to balance the dataset.
+
+**Threshold tuning** to reduce bias toward predicting DED.
+
+**Alternative models** such as Gradient Boosting or Logistic Regression for improved class balance.
+
+The model’s high recall for DED cases suggests it could serve as a valuable screening tool for early diagnosis and intervention, but improvements are needed to enhance its ability to identify non-DED cases accurately.
+
+## Conclusion
+
+This analysis, implementing a Random Forest model to predict Dry Eye Disease (DED) using clinical and demographic data, cretaed a disease model capable of achieving high recall for DED cases. However, while it highlights the model's potential for early diagnosis, improvements in handling class imbalance are necessary to enhance overall classification performance. Further model tuning and exploration of alternative machine learning approaches could refine the model's accuracy and generalizability.
+
+## Proposed Next Steps
+- Improve classification of non-DED cases through class balancing techniques.
+
+- Explore other machine learning models (e.g., XGBoost, Logistic Regression).
+
+- Incorporate additional clinical features for better predictive power.
 
 *The dataset used in this analysis is hosted on [**Kaggle**](https://www.kaggle.com/code/vincentokumu/dry-eye-disease-modeling?select=Dry_Eye_Dataset.csv)*
 
