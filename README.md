@@ -12,17 +12,17 @@ The dataset used for this analysis contains information of about 20000 subjects 
 
 ### 🛠️Data Preprocessing
 
-#### 1. 🧹Data Cleaning
+#### 1. Data Cleaning
 
 Missing values were handled using median imputation for numerical variables and mode imputation for categorical variables.
 Feature names were standardized (lowercased and stripped of extra spaces) to ensure consistency.
 
-#### 2. 🔢One-Hot Encoding
+#### 2. One-Hot Encoding
 
 Categorical variables (e.g., Gender, Sleep Quality, Stress Level) were one-hot encoded using `pd.get_dummies()` to convert them into binary columns.
 The `drop_first=True` parameter was applied to avoid multicollinearity.
 
-#### 3. 🔄Feature Alignment
+#### 3. Feature Alignment
 
 After encoding, feature alignment was ensured between training and test data using `reindex()` to handle missing or extra features consistently.
 
@@ -30,15 +30,15 @@ After encoding, feature alignment was ensured between training and test data usi
 
 A Random Forest classifier was trained using the processed data:
 
-🌳Model Type: Random Forest
+- Model Type: Random Forest
 
-🌲Number of Trees: 100
+- Number of Trees: 100
 
-🔎Max Depth: None (default)
+- Max Depth: None (default)
 
-🏆Criterion: Gini index
+- Criterion: Gini index
 
-🔀Train-Test Split: 80% training, 20% testing
+- Train-Test Split: 80% training, 20% testing
 
 The model was trained using the `RandomForestClassifier` from `scikit-learn`. The target variable was binarized to reflect the presence or absence of DED.
 
@@ -46,13 +46,13 @@ The model was trained using the `RandomForestClassifier` from `scikit-learn`. Th
 
 The model’s performance was evaluated using:
 
-✅**Accuracy** – Percentage of correctly classified cases
+- **Accuracy** – Percentage of correctly classified cases
 
-🎯**Precision** – Percentage of positive predictions that were correct
+- **Precision** – Percentage of positive predictions that were correct
 
-🔍**Recall** – Percentage of actual positive cases correctly identified
+- **Recall** – Percentage of actual positive cases correctly identified
 
-📈**F1-Score** – Harmonic mean of precision and recall
+- **F1-Score** – Harmonic mean of precision and recall
 
 The classification report was generated using `classification_report()` to assess detailed class-wise performance.
 
@@ -60,11 +60,11 @@ The classification report was generated using `classification_report()` to asses
 
 After training, the model was applied to a new patient dataset:
 
-🏥New data was encoded using the same encoding strategy as training data.
+  - New data was encoded using the same encoding strategy as training data.
 
-🚫Any missing features were filled with zeros to maintain consistency.
+  - Any missing features were filled with zeros to maintain consistency.
 
-🚀Predictions were made using `predict()` and `predict_proba()` to estimate both classification and probability of DED incidence.
+  - Predictions were made using `predict()` and `predict_proba()` to estimate both classification and probability of DED incidence.
 
 The predictions were saved to a CSV file for further analysis.
 
@@ -74,13 +74,13 @@ The predictions were saved to a CSV file for further analysis.
 
 The Random Forest model achieved the following performance on the test data:
 
-✅**Accuracy:** 66%
+- **Accuracy:** 66%
 
-🎯**Precision:** 67% for DED cases, 28% for non-DED cases
+- **Precision:** 67% for DED cases, 28% for non-DED cases
 
-🔍**Recall:** 96% for DED cases, 3% for non-DED cases
+- **Recall:** 96% for DED cases, 3% for non-DED cases
 
-📈**F1-Score:** 79% for DED cases, 6% for non-DED cases
+- **F1-Score:** 79% for DED cases, 6% for non-DED cases
 
 The model exhibited high sensitivity (recall) for detecting DED cases but struggled to correctly classify non-DED cases due to class imbalance.
 
